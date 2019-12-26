@@ -2,6 +2,7 @@ package lesson1;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.List;
 
 public class NoteArrayList2 {
 
@@ -42,10 +43,14 @@ public class NoteArrayList2 {
 		System.out.println(notes.size());
 		System.out.println(notes.contains("Rogovets"));
 		System.out.println(notes.containsAll(note2));
-		
-		Collections.addAll(notes,"4", "Inna", "Bila", "52463");
-		
-		// methods: sort & of ????
+
+		Collections.addAll(notes, "4", "Inna", "Bila", "52463");
+		System.out.println(Collections.frequency(notes, "Yanna"));
+
+		// Collections.sort(notes);
+		// notes.removeIf(i ->(i == "Inna"));
+
+		// methods: of ????
 
 		for (String a : notes) {
 			if (a.length() - 1 % 4 == 0) {
